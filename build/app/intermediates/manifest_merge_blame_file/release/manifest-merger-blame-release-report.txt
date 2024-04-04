@@ -1,0 +1,237 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.codeland_task"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:3:5-81
+11-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:3:22-78
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:4:5-64
+12-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:4:22-62
+13    <!--
+14         Required to query activities that can process text, see:
+15         https://developer.android.com/training/package-visibility?hl=en and
+16         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+17
+18         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+19    -->
+20    <queries>
+20-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:43:5-61:15
+21        <intent>
+21-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:44:9-47:18
+22            <action android:name="android.intent.action.PROCESS_TEXT" />
+22-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:45:13-72
+22-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:45:21-70
+23
+24            <data android:mimeType="text/plain" />
+24-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:46:13-50
+24-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:46:19-48
+25        </intent>
+26        <intent>
+26-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:48:10-51:12
+27            <action android:name="android.intent.action.VIEW" />
+27-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:49:5-57
+27-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:49:13-54
+28
+29            <data android:scheme="sms" />
+29-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:46:13-50
+29-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:50:11-31
+30        </intent>
+31        <!-- If your app checks for call support -->
+32        <intent>
+32-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:53:3-56:12
+33            <action android:name="android.intent.action.VIEW" />
+33-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:49:5-57
+33-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:49:13-54
+34
+35            <data android:scheme="tel" />
+35-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:46:13-50
+35-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:50:11-31
+36        </intent>
+37        <!-- If your application checks for inAppBrowserView launch mode support -->
+38        <intent>
+38-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:58:3-60:12
+39            <action android:name="android.support.customtabs.action.CustomTabsService" />
+39-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:59:5-82
+39-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:59:13-79
+40        </intent>
+41    </queries>
+42
+43    <permission
+43-->[androidx.core:core:1.10.1] /Users/ageye/.gradle/caches/transforms-3/0b9c903fef8d2eb2a269c36999ef4a74/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+44        android:name="com.example.codeland_task.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.10.1] /Users/ageye/.gradle/caches/transforms-3/0b9c903fef8d2eb2a269c36999ef4a74/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.10.1] /Users/ageye/.gradle/caches/transforms-3/0b9c903fef8d2eb2a269c36999ef4a74/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.example.codeland_task.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.10.1] /Users/ageye/.gradle/caches/transforms-3/0b9c903fef8d2eb2a269c36999ef4a74/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.10.1] /Users/ageye/.gradle/caches/transforms-3/0b9c903fef8d2eb2a269c36999ef4a74/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+48
+49    <application
+50        android:name="android.app.Application"
+50-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:8:9-42
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.10.1] /Users/ageye/.gradle/caches/transforms-3/0b9c903fef8d2eb2a269c36999ef4a74/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+52        android:icon="@mipmap/ic_launcher"
+52-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:9:9-43
+53        android:label="codeland_task" >
+53-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:7:9-38
+54        <activity
+54-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:10:9-31:20
+55            android:name="com.example.codeland_task.MainActivity"
+55-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:11:13-41
+56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:16:13-163
+57            android:enableOnBackInvokedCallback="true"
+57-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:14:13-55
+58            android:exported="true"
+58-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:12:13-36
+59            android:hardwareAccelerated="true"
+59-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:17:13-47
+60            android:launchMode="singleTop"
+60-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:13:13-43
+61            android:theme="@style/LaunchTheme"
+61-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:15:13-47
+62            android:windowSoftInputMode="adjustResize" >
+62-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:18:13-55
+63
+64            <!--
+65                 Specifies an Android theme to apply to this Activity as soon as
+66                 the Android process has started. This theme is visible to the user
+67                 while the Flutter UI initializes. After that, this theme continues
+68                 to determine the Window background behind the Flutter UI.
+69            -->
+70            <meta-data
+70-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:23:13-26:17
+71                android:name="io.flutter.embedding.android.NormalTheme"
+71-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:24:15-70
+72                android:resource="@style/NormalTheme" />
+72-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:25:15-52
+73
+74            <intent-filter>
+74-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:27:13-30:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:28:17-68
+75-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:28:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:29:17-76
+77-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:29:27-74
+78            </intent-filter>
+79        </activity>
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+84-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:34:9-36:33
+85            android:name="flutterEmbedding"
+85-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:35:13-44
+86            android:value="2" />
+86-->/Users/ageye/Documents/study/flutter_projects/codeland_task/android/app/src/main/AndroidManifest.xml:36:13-30
+87
+88        <provider
+88-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+89            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+89-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+90            android:authorities="com.example.codeland_task.flutter.image_provider"
+90-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+91            android:exported="false"
+91-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+92            android:grantUriPermissions="true" >
+92-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+93            <meta-data
+93-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+94                android:name="android.support.FILE_PROVIDER_PATHS"
+94-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+95                android:resource="@xml/flutter_image_picker_file_paths" />
+95-->[:image_picker_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+96        </provider>
+97
+98        <activity
+98-->[:url_launcher_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+99            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+99-->[:url_launcher_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+100            android:exported="false"
+100-->[:url_launcher_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+101            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+101-->[:url_launcher_android] /Users/ageye/Documents/study/flutter_projects/codeland_task/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+102
+103        <uses-library
+103-->[androidx.window:window:1.0.0-beta04] /Users/ageye/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+104            android:name="androidx.window.extensions"
+104-->[androidx.window:window:1.0.0-beta04] /Users/ageye/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+105            android:required="false" />
+105-->[androidx.window:window:1.0.0-beta04] /Users/ageye/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+106        <uses-library
+106-->[androidx.window:window:1.0.0-beta04] /Users/ageye/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+107            android:name="androidx.window.sidecar"
+107-->[androidx.window:window:1.0.0-beta04] /Users/ageye/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+108            android:required="false" />
+108-->[androidx.window:window:1.0.0-beta04] /Users/ageye/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+109
+110        <provider
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+111            android:name="androidx.startup.InitializationProvider"
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+112            android:authorities="com.example.codeland_task.androidx-startup"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+113            android:exported="false" >
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+114            <meta-data
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+116                android:value="androidx.startup" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+117        </provider>
+118
+119        <receiver
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+120            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+121            android:directBootAware="false"
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+122            android:enabled="true"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+123            android:exported="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+124            android:permission="android.permission.DUMP" >
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+126                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+129                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+132                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+135                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ageye/.gradle/caches/transforms-3/a0ecce03964d1d4dc26ffab32b08b16e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+136            </intent-filter>
+137        </receiver>
+138    </application>
+139
+140</manifest>
